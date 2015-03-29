@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="atomApp">
+<head>
+    <title>Hello World!</title>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+<h1>Hello World!</h1>
+We are using node.js {{nodeVersion}}
+and atom-shell {{atomVersion}}.
+<ul ng-repeat="name in stuff">
+    <li>{{name}}</li>
+</ul>
+</body>
+</html>
+
+
