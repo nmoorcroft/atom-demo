@@ -1,15 +1,8 @@
-var _ = require('lodash');
+'use strict';
 
-var atomApp = angular.module('atomApp', []);
+angular.module('atomApp', [])
+    .controller('MainCtrl', require('./MainCtrl'));
 
-atomApp.controller('MainCtrl', function ($scope) {
-    $scope.stuff = _.map(['neil','cat','tom','lottie'], function(name) {
-       return _.capitalize(name);
-    });
 
-    $scope.nodeVersion = process.version;
-    $scope.atomVersion = process.versions['atom-shell'];
-
-});
 
 
